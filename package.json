@@ -9,6 +9,10 @@
     "type": "git",
     "url": "https://github.com/thingweb/node-wot.git"
   },
+  "scripts": {
+    "postinstall": "npm run build",
+    "format": "prettier --write '**/*.js' '**/*.json'"
+  },
   "devDependencies": {
     "lerna": "2.9.0",
     "lerna-run": "0.0.2",
